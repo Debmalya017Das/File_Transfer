@@ -12,7 +12,6 @@ const io = new Server(server, {
     methods: ["GET", "POST"]
   }
 });
-
 const rooms = new Map();
 
 io.on('connection', (socket) => {

@@ -71,7 +71,7 @@ function App() {
     );
   }
 
-  return (
+  return (  
     <div className="container mx-auto p-4">
       {isConnected ? (
         <Room socket={socket} roomId={roomId} userName={userName} peerName={peerName} />
