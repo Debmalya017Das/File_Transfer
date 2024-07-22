@@ -55,14 +55,17 @@ function WaitingRoom({ roomId, userName }) {
         type="text"
         value={roomUrl}
         readOnly
-        className="w-full p-2 mb-2 border rounded"
+        className="w-1/2 py-2 px-2 my-4 border rounded shadow-lg"
       />
-      <button
+      <div className="items-center my-3">
+        <button
         onClick={copyToClipboard}
-        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+        className="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-300 hover:text-black"
       >
         Copy to Clipboard
       </button>
+      </div>
+      
       <p className="mt-4 text-red-500">
         Note: The other user must log in with a different account to join this room.
       </p>

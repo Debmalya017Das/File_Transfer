@@ -249,10 +249,18 @@ function App() {
   }
 
   return (  
-    <div className="container mx-auto p-4">
-      <button onClick={handleLogout} className="bg-red-500 text-white px-4 py-2 rounded mb-4">
-        Logout
-      </button>
+    <div className="container mx-auto ">
+      <nav className="flex justify-between items-center p-4 bg-gray-100 mb-5">
+        <h1 className="text-4xl font-monteserat text-slate-900">File Transfer</h1>
+        <button 
+          onClick={handleLogout} 
+          className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
+        >
+          Logout
+        </button>
+      </nav>
+     
+       
       {isConnected ? (
         <Room socket={socket} roomId={roomId} userName={userName} peerName={peerName} />
       ) : (

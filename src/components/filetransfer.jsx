@@ -52,7 +52,7 @@ function FileTransfer({ socket, roomId }) {
         />
         <button
           onClick={() => fileInputRef.current.click()}
-          className="bg-gray-200 px-4 py-2 rounded mr-2"
+          className="bg-slate-300 text-black px-4 py-2 rounded mr-2"
         >
           Choose File
         </button>
@@ -61,7 +61,7 @@ function FileTransfer({ socket, roomId }) {
       <button
         onClick={sendFile}
         disabled={!file}
-        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 disabled:bg-gray-400"
+        className="bg-blue-900 hover:bg-blue-300 hover:text-black text-white px-4 py-2 rounded hover:bg-blue-600 disabled:bg-gray-400"
       >
         Send file
       </button>
