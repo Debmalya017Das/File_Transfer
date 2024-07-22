@@ -7,4 +7,15 @@ To run the project
 
    ```sh
    git clone https://github.com/Debmalya017Das/File_Transfer.git
-   cd folder_name
+  
+
+2. **To run the frontend**
+
+    ```sh
+     cd folder_name
+    npm run dev
+3. **To run backend**
+
+   ```sh
+   cd server
+   nodemon server.cjs
