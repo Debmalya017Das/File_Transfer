@@ -12,7 +12,7 @@ To run the project
 2. **To run the frontend**
 
     ```sh
-     cd folder_name
+    cd folder_name
     npm run dev
 3. **To run backend**
 
