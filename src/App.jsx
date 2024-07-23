@@ -192,7 +192,7 @@ function App() {
 
   const handleLogin = async (username, password) => {
     try {
-      const response = await fetch('http://localhost:3001/login', {
+      const response = await fetch('https://file-transfer-2.onrender.com/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
@@ -212,7 +212,7 @@ function App() {
 
   const handleRegister = async (username, password) => {
     try {
-      const response = await fetch('http://localhost:3001/register', {
+      const response = await fetch('https://file-transfer-2.onrender.com/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
