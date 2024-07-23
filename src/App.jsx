@@ -147,7 +147,7 @@ import WaitingRoom from './components/waitingroom';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
 
-const socket = io('http://localhost:3001');
+const socket = io('https://file-transfer-2.onrender.com');
 
 function App() {
   const [roomId, setRoomId] = useState('');
