@@ -155,6 +155,10 @@ io.on('connection', (socket) => {
 });
 
 const PORT = process.env.PORT || 3001;
+
+app.get('/', (req, res) => {
+  res.send('Backend running');
+});
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
