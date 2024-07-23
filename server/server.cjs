@@ -13,7 +13,12 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
+<<<<<<< HEAD
     origin: "https://file-transfer-1.onrender.com",
+=======
+    // origin: "http://localhost:5173",
+     origin: "https://file-transfer-1.onrender.com",
+>>>>>>> ba4087d5f5c48b203659c426875828509ca53b9c
     methods: ["GET", "POST"]
   }
 });
