@@ -22,7 +22,7 @@ const io = new Server(server, {
 });
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://debmalya017:zmVFDlEDTPIbo9P6@cluster0.htavnrp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect('', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
